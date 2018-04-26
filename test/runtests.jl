@@ -1,5 +1,7 @@
 using Spelling
 using Base.Test
 
-# write your own tests here
-@test 1 == 2
+@test spellcheck("radio") == true 
+@test spellcheck("aklsdfjlak") == false 
+@test score("test") > 5000
+@test (w->w.match).(spellcheck_sentence("fox house spoon asdkflj horse")) == ["asdkflj"]
