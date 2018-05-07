@@ -22,4 +22,9 @@ julia> spellcheck_sentence("the quick bronw fox jumped over the laxy dog")
  RegexMatch("bronw")
  RegexMatch("laxy")
 
+julia> correct("speilng")
+"spelling"
+
+julia> correct("matlab")
+"atlas"
 ```
